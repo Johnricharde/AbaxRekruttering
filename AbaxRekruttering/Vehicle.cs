@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace AbaxRekruttering
 {
-    public class Vehicle
+    public abstract class Vehicle
     {
-        public string RegistrationNumber { get; set; }
+        public string Registration { get; set; }
         public int KilowattEffect { get; set; }
+
+        public abstract void ShowInfo();
+
+        public abstract void StartVehicle();
     }
 }
